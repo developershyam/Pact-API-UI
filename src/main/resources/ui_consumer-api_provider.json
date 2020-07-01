@@ -1,0 +1,34 @@
+{
+  "consumer": {
+    "name": "ui_consumer"
+  },
+  "provider": {
+    "name": "api_provider"
+  },
+  "interactions": [
+    {
+      "description": "Request to GET users",
+      "providerState": "get all users",
+      "request": {
+        "method": "GET",
+        "path": "/api/getAllUsers"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+        },
+        "body": [
+          {
+            "name": "Developer",
+            "email": "dev@test.org"
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "3.0.0"
+    }
+  }
+}
